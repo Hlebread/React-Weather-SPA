@@ -1,0 +1,23 @@
+@import "../../../../../../styles/mixins.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
+  margin-top: 25px;
+
+  @include for-tablet {
+	 flex-direction: row;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}

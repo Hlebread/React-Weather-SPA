@@ -1,0 +1,15 @@
+@import "../../styles/mixins.scss";
+
+.component {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
+  padding: 5px;
+  overflow-y: auto;
+  gap: 10px;
+
+  @include for-tablet {
+    padding: 25px;
+    padding-top: 5px;
+  }
+}

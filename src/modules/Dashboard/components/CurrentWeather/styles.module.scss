@@ -1,0 +1,31 @@
+@import "../../../../styles/mixins.scss";
+
+.component {
+  background-color: var(--color-accent);
+  background: url(../../../../assets/images/currentWeatherBg.png);
+  background-size: cover;
+  grid-area: current;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 30px 60px;
+  color: var(--color-font-primary);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: var(--transition-speed);
+
+  @include for-tablet {
+    font-size: 1.5rem;
+    padding: 15px 25px 60px;
+  }
+
+  @include for-desktop {
+    margin-top: 0;
+    border-radius: 16px;
+    padding: 25px 60px;
+  }
+}
+
+.secInfo {
+  font-weight: normal;
+}

@@ -1,0 +1,18 @@
+@import "../../styles/mixins.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  overflow-y: auto;
+  gap: 10px;
+
+  @include for-tablet {
+    padding: 25px;
+    padding-top: 20px;
+  }
+
+  @include for-desktop {
+    align-items: center;
+  }
+}

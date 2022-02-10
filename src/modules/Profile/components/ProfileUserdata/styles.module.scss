@@ -1,0 +1,11 @@
+.component {
+  grid-area: form;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-grow: 1;
+  width: 100%;
+}

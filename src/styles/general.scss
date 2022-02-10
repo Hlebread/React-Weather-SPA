@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+body {
+  overflow: hidden;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}

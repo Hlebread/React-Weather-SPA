@@ -1,0 +1,9 @@
+.component {
+  height: 100vh;
+  background: var(--color-background-primary);
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: var(--header-height);
+  grid-template-areas: "nav header" "nav main";
+  overflow: hidden;
+}

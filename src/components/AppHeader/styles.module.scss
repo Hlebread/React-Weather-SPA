@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+
+.component {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  background-color: #39bbd7;
+
+  @include for-desktop {
+    background-color: transparent;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: var(--transition-speed);
+  font-size: 2rem;
+  z-index: 1;
+  color: var(--color-font-primary);
+
+  &:hover {
+    color: var(--color-font-primary);
+    background-color: var(--color-accent);
+  }
+
+  @include for-desktop {
+    color: var(--color-font-third);
+  }
+}

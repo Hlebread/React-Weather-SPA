@@ -1,0 +1,42 @@
+@import "../../../../../../styles/mixins.scss";
+
+.component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.temperature {
+  font-size: 4.5rem;
+  font-weight: normal;
+  flex: 1 1 30%;
+  max-width: 150px;
+
+  @include for-tablet {
+    font-size: 5rem;
+  }
+
+  @include for-desktop {
+    flex-basis: 30%;
+  }
+}
+
+.icon {
+  flex: 1 1 30%;
+  max-width: 150px;
+
+  @include for-tablet {
+    flex-basis: 150px;
+  }
+
+  @include for-desktop {
+    flex-basis: 30%;
+  }
+}
+
+.details {
+	@include for-tablet {
+		text-align: right;
+	 }
+}

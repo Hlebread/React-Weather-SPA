@@ -1,0 +1,17 @@
+.component {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.link {
+  height: 100%;
+  border-left: 4px solid transparent;
+
+  &_active {
+    border-color: var(--color-font-primary);
+    color: var(--color-font-primary);
+  }
+}

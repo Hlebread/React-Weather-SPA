@@ -1,0 +1,36 @@
+@import "../../styles/mixins.scss";
+
+.component {
+  width: 100%;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #dce0ec;
+  box-shadow: 0px 4px 32px rgba(218, 228, 255, 0.16);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 17px;
+  padding: 0 20px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-accent);
+    font-size: 15px;
+
+    @include for-tablet {
+      line-height: 24px;
+      font-size: 17px;
+    }
+  }
+
+  &:focus {
+    border-color: var(--color-accent);
+  }
+}
+
+.invalid {
+  margin-top: 6px;
+  font-size: 15px;
+  color: red;
+}

@@ -1,0 +1,52 @@
+.component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(var(--color-accent-light), var(--color-accent));
+  z-index: 10000;
+}
+
+.icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -150px;
+  margin: auto;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 230px;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  padding: 0 25px;
+  font-size: 25px;
+  color: var(--color-font-primary);
+  max-width: 400px;
+  max-height: 200px;
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--color-accent);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
