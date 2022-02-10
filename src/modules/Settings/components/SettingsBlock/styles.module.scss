@@ -1,0 +1,15 @@
+.component {
+  background-color: var(--color-font-primary);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  padding: 20px 30px 35px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-accent);
+}

@@ -1,0 +1,47 @@
+.main {
+  --color-accent: #4d5bf9;
+  --color-accent-light: #cec1ff;
+
+  --color-background-primary: #e3ebff;
+  --color-background-second: #f7f6fb;
+
+  --color-font-primary: #f7f6fb;
+  --color-font-second: #cec1ff;
+  --color-font-third: #151515;
+}
+
+.black {
+  --color-accent: #000000;
+  --color-accent-light: #bbbbbb;
+
+  --color-background-primary: #303032;
+  --color-background-second: #848484;
+
+  --color-font-primary: #f7f6fb;
+  --color-font-second: #44535e;
+  --color-font-third: #ffffff;
+}
+
+.orange {
+  --color-accent: rgb(255, 145, 0);
+  --color-accent-light: rgb(255, 176, 73);
+
+  --color-background-primary: #e3ebff;
+  --color-background-second: #f7f6fb;
+
+  --color-font-primary: #f7f6fb;
+  --color-font-second: #ffd38c;
+  --color-font-third: #151515;
+}
+
+.olive {
+  --color-accent: #204429;
+  --color-accent-light: rgb(126, 134, 106);
+
+  --color-background-primary: #e3ebff;
+  --color-background-second: #f7f6fb;
+
+  --color-font-primary: #f7f6fb;
+  --color-font-second: rgb(126, 134, 106);
+  --color-font-third: #151515;
+}

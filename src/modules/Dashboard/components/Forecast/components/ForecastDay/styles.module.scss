@@ -1,0 +1,29 @@
+@import "../../../../../../styles/mixins.scss";
+
+.component {
+  width: 100%;
+  flex: 0 0 70px;
+  background-color: var(--color-accent-light);
+  color: var(--color-font-third);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition-speed);
+  cursor: pointer;
+  font-size: 1.2rem;
+  overflow: hidden;
+
+  @include for-tablet {
+    flex-basis: 110px;
+  }
+
+  &_active {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-font-primary);
+    flex: 0 0 500px;
+  }
+}

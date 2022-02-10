@@ -1,0 +1,52 @@
+@import "../../styles/mixins.scss";
+
+.component {
+  height: 100vh;
+  width: 0;
+  background-color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+  transition: 0.2s;
+  grid-area: nav;
+  padding-top: 15px;
+
+  @include for-tablet {
+    width: 68px;
+  }
+
+  &_active {
+    width: 68px;
+
+    @include for-tablet {
+      width: 250px;
+    }
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-font-second);
+  text-decoration: none;
+  padding: 0 11px;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--color-font-primary);
+  }
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 38px;
+  height: 38px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 2rem;
+}

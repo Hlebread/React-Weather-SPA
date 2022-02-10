@@ -1,0 +1,45 @@
+@import "../../../../../../styles/mixins.scss";
+
+.component {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-background-second);
+  border-radius: 24px 24px 0 0;
+  padding: 5px 10px 5px 35px;
+  font-weight: 600;
+  color: var(--color-font-third);
+
+  @include for-tablet {
+    padding: 5px 35px;
+  }
+
+  @include for-desktop {
+    flex-direction: column;
+    column-gap: 40px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 1 50%;
+  font-size: 1rem;
+
+  @include for-tablet {
+    flex-basis: 33%;
+    padding-left: 35px;
+    font-size: 2rem;
+  }
+
+  @include for-desktop {
+    width: 50%;
+    padding-left: 0;
+  }
+}
+
+.icon {
+  font-size: 2rem;
+}

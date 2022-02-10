@@ -1,0 +1,24 @@
+@import "../../../../styles/mixins.scss";
+
+.component {
+  background-color: var(--color-background-second);
+  grid-area: chart;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  padding: 10px 15px;
+
+  @include for-desktop {
+    border-radius: 16px;
+    margin-top: 0;
+  }
+}
+
+.container {
+  display: flex;
+  width: 99%;
+  height: 99%;
+  position: relative;
+}

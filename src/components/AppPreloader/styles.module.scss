@@ -1,0 +1,100 @@
+.component {
+  background: var(--color-accent-light);
+  background: radial-gradient(var(--color-accent-light), var(--color-accent));
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+  display: none;
+
+  &_active {
+    display: block;
+  }
+}
+
+.container {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.lineWrapper {
+  @keyframes spin {
+    0%,
+    15% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+
+  @for $i from 1 to 6 {
+    $size: 104 - (14 * $i);
+
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * -50}ms;
+
+      .line {
+        width: #{$size}px;
+        height: #{$size}px;
+        top: #{$i * 7}px;
+
+        @if $i == 1 {
+          border-color: hsl(0, 80%, 60%);
+        } @else {
+          border-color: hsl(60 * ($i - 1), 80%, 60%);
+        }
+      }
+    }
+  }
+}
+
+.line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 230px;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  font-size: 15px;
+  color: var(--color-font-primary);
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+}

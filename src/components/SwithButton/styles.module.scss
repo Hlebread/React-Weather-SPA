@@ -1,0 +1,52 @@
+.component {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 34px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 16px;
+  transition: var(--transition-speed);
+  background-color: var(--color-accent-light);
+
+  &_active {
+    background-color: var(--color-accent);
+
+    .slider {
+      left: 38px;
+    }
+
+    .label {
+      color: var(--color-font-primary);
+      right: unset;
+      left: 13px;
+    }
+  }
+}
+
+.slider {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 2px;
+  transition: var(--transition-speed);
+}
+
+.input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.label {
+  position: absolute;
+  right: 13px;
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: var(--transition-speed);
+}
